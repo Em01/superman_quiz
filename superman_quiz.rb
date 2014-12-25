@@ -71,3 +71,23 @@ class Quiz
 		end
 
 	end
+
+	def determine_grade
+
+		Console_Screen.cls 
+
+		if $noRight >= 3 then 
+
+			print "You correctly answered " + $noRight.to_s + " questions(s). "
+			puts "You have passed this trivia quiz!\n\n"
+			puts "You earned a rank of:Good Citizen" if $noRight == 3
+			puts "You earned a rank of:Side Kick" if $noRight == 4
+			puts "You earned a rank of:Superhero" if $noRight == 5
+			print "\n\nPress Enter to continue."
+
+		else
+
+			print "You missed " + (5 - $noRight).to_s + " questions. "
+			puts ""
+
+	end
