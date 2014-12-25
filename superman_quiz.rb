@@ -40,3 +40,34 @@ class Quiz
 		Console_Screen.pause
 
 	end
+
+	def disp_q(question, q_A, q_B, q_C, q_D, answer)
+
+		loop do 
+
+			Console_Screen.cls 
+
+			puts question + "\n\n"
+			puts q_A
+			puts q_B
+			puts q_C
+			puts q_D
+			print "\nType the letter representing your answer: "
+
+			reply = STDIN.gets
+			reply.chop!
+
+			if answer == reply then 
+
+				$noRight += 1
+			end
+
+			if reply == "a" or reply == "b" or reply == "c" or reply == "d" then 
+
+				break
+
+			end
+
+		end
+
+	end
