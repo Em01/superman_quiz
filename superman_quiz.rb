@@ -88,6 +88,20 @@ class Quiz
 		else
 
 			print "You missed " + (5 - $noRight).to_s + " questions. "
-			puts ""
+			puts "You have failed the trivia quiz."
+			puts "retake the quiz"
+			print "\n\nPress Enter to continue."
+
+		end
+
+		Console_Screen.pause
+
+	end
+
+	def display_credits
+
+		Console_Screen.cls 
+		puts "\t\tThankyou for taking the quiz"
+	end
 
 	end
