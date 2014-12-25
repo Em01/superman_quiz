@@ -112,4 +112,32 @@ class Quiz
 
 	SQ.display_greeting
 
+	answer = " "
+
+	loop do 
+
+		Console_Screen.cls
+		print "Are you ready to take the quiz? (y/n): "
+
+		answer = STDIN.gets 
+		answer.chop!
+
+		break if answer == "y" || answer == "n"
+	end
+
+	#Analyze the players input
+	if answer == "n"
+
+		Console_Screen.cls 
+
+		puts "Okay, perhaps another time.\n\n"
+
+	else
+
+		SQ.display_instructions
+
+		SQ.disp_q("What is the name of the Daily Planet's ace photographer?",
+			"a. Jimmy Olsen", "b. Clark Kent", "c. Lex Luthor", "d. Louis Lane",
+			"a")
+ 
 	end
