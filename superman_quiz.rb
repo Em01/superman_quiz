@@ -10,3 +10,6 @@ class Screen
 	end
 
 end
+
+class Quiz
+	end
