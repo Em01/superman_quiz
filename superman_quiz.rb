@@ -104,4 +104,12 @@ class Quiz
 		puts "\t\tThankyou for taking the quiz"
 	end
 
+	#Main Script Logic
+	$noRight = 0
+
+	Console_Screen = Screen.new
+	SQ = Quiz.new
+
+	SQ.display_greeting
+
 	end
