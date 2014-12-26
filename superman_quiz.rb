@@ -139,5 +139,13 @@ class Quiz
 		SQ.disp_q("What is the name of the Daily Planet's ace photographer?",
 			"a. Jimmy Olsen", "b. Clark Kent", "c. Lex Luthor", "d. Louis Lane",
 			"a")
+
+		SQ.disp_q("What is the name of Clark Kent's home town?",
+			"a. Metropolis", "b. Gotham City", "c. Smallville", "d. New York",
+			"c")
+
+		SQ.disp_q("In which movie did Superman battle General Zod?",
+			"a. Superman", "b. Superman II", "c. Superman III", "d. Superman IV",
+			"b")
  
 	end
