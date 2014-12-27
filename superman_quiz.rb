@@ -147,5 +147,17 @@ class Quiz
 		SQ.disp_q("In which movie did Superman battle General Zod?",
 			"a. Superman", "b. Superman II", "c. Superman III", "d. Superman IV",
 			"b")
+
+		SQ.disp_q("What is the name of Superman's father?",
+			"a. Nimo", "b. Jarrell", "c. Lex Luthor", "d. Krypton",
+			"b")
+
+		SQ.disp_q("Where had Superman been at the start of Superman returns?",
+			"a. Moon", "b. Fortress of Solitude", "c. Earth's Core", "d. Krypton",
+			"d")
+
+		SQ.determine_grade
+
+		SQ.display_credits
  
 	end
